@@ -4,15 +4,15 @@ version: 2
 jobs:
   build:
     docker:
-      -image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/ruby:2.4.1-node-browsers
       
     steps:
-      -checkout
+      - checkout
       
-      -run:
+      - run:
         name: Greeting
         command: echo Hello, world.
       
-      -run:
+      - run:
         name: print the current line
         command: date
