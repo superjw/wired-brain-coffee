@@ -7,12 +7,12 @@ jobs:
     
     steps:
       - run:
-        name: build dependencies
-        command: bundle install
+          name: build dependencies
+          command: bundle install
       - run:
-        name: build the jekyll site
-        command: bundle exec jekyll build
+          name: build the jekyll site
+          command: bundle exec jekyll build
         
       - run:
-        name: Print the current time
-        command: date
+          name: Print the current time
+          command: date
